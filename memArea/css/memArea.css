@@ -1,0 +1,233 @@
+.memArea{
+	width: 100%;
+	margin: auto;
+}
+.memArea-container{
+	max-width: 1200px;
+	margin: auto;
+}
+.memArea-title{
+	margin-top: 20px;
+}
+.memArea-titleTxt{
+	padding-left: 30px;
+	line-height: 70px;
+	font-size: 33px;
+	font-weight: 700;
+	color:#777;
+}
+.memArea-box{
+	box-shadow: 0px 0px 2px 3px rgba(0,0,0,.1);
+	margin-top: 30px;
+}
+.memArea-tab{
+	font-size: 18px;
+	height: 50px;
+	line-height: 50px;
+	cursor: pointer;
+	text-align: center;
+	vertical-align: middle;
+}
+.memArea-tab img{
+	width: 30px;
+	vertical-align: middle;
+	padding-right: 8px;
+}
+.memArea-tab:hover{
+	background-color: #eee;
+}
+.memArea-tab:active{
+	background-color: #eee;
+}
+.memArea-contain{
+	box-shadow: 0px 0px 2px 3px rgba(0,0,0,.1);
+	margin-top: 30px;
+	margin-left: 30px;
+}
+/*預設畫面顯示第一頁*/
+.memArea-msg,.memArea-collect,.memArea-order{
+	display: none;
+}
+/*各子頁固定高度*/
+.memArea-contain3{
+	height: 500px;
+}
+/*各子頁物件的框框*/
+.memArea-box3{
+	margin-top: 15px;
+	border:1px solid #aaa;
+}
+/*會員資訊頁面*/
+.memArea-contain-title{
+	font-size: 20px;
+	font-weight: 500;
+	color:#777;
+	text-align: center;
+	padding-top: 30px;
+}
+.memArea-info-account{
+	padding-top: 15px;
+}
+.memArea-info label{
+	display: inline-block;
+	width: 35%;
+	text-align: right;
+}
+.memArea-info input{
+	width: 270px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+#memsubmit{
+	border: none;
+	border-radius: 5px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	text-align: center;
+	position: relative;
+	left:35.5%;
+	font-family: '微軟正黑體';
+	padding: 10px 0px;
+	color: #fff;
+	background-color: #a30707;
+	box-shadow: 0px 0px 2px 3px rgba(0,0,0,.1);
+}
+/*會員留言紀錄*/
+.memArea-msg-title{
+	font-size: 16px;
+	font-weight: 500;
+	color:#333;
+	padding: 7px;
+}
+.memArea-msg-txt{
+	font-size: 14px;
+	color: #aaa;
+	padding: 7px;
+}
+.memArea-msg-delete{
+	display: block;
+	padding: 5px 10px;
+	background-color: #a30707;
+	text-align: center;
+	color: #fff;
+	cursor: pointer;
+	font-size: 12px;
+}
+
+
+/*收藏攤商紀錄*/
+.memArea-collectbox{
+	margin-top: 15px;
+	border:1px solid #aaa;
+}
+.memArea-collect-img{
+	box-sizing: border-box;
+}
+.memArea-collect-img img{
+	padding: 5px;
+	width: 100%;
+}
+.memArea-collect-shop{
+	font-size: 14px;
+	padding-top: 20px;
+	padding-left: 10px;
+}
+.memArea-collect-shop span{
+	padding: 5px 0;
+}
+.memArea-collect-delete{
+	display: block;
+	padding: 5px 10px;
+	background-color: #a30707;
+	text-align: center;
+	color: #fff;
+	cursor: pointer;
+	font-size: 12px;
+}
+
+/*會員訂單紀錄*/
+.memArea-orderhead span{
+	font-size: 14px;
+	margin-top: 15px;
+	padding: 8px 7px;
+	display: inline-block;
+	background-color: #a30707;
+	color:#fff;
+	text-align: center;
+	border:1px solid #fff;
+	height: 50px;
+	line-height: 2;
+}
+.memArea-orderbody span{
+	font-size: 13px;
+	padding: 8px 7px;
+	display: inline-block;
+	color:#555;
+	text-align: center;
+}
+.memArea-orderbody{
+	border:1px solid #777;
+	background-color: #fff;
+}
+
+@media screen and (max-width: 768px){
+	
+	.memArea-titleTxt{
+		text-align: center;
+	}
+	.memArea-tab{
+		font-size: 13px;
+	}
+	.memArea-title img{
+		width: 15%;
+	}
+	.memArea-contain{
+		margin: 0;
+	}
+	.memArea-info label{
+		display: inline-block;
+		width: 30%;
+		text-align: right;
+	}
+	.memArea-info input{
+		width: 50%;
+		margin-top: 5px;
+		margin-bottom: 5px;
+	}
+	#memsubmit{
+		border: none;
+		border-radius: 5px;
+		margin-top: 30px;
+		margin-bottom: 30px;
+		text-align: center;
+		position: relative;
+		left:30%;
+		font-family: '微軟正黑體';
+		padding: 10px 0px;
+		color: #fff;
+		background-color: #a30707;
+		box-shadow: 0px 0px 2px 3px rgba(0,0,0,.1);
+	}
+	.memArea-orderhead span{
+		font-size: 14px;
+		display:block;
+		background-color: #a30707;
+		color:#fff;
+		text-align: center;
+		margin: 0;
+		height: 40px;
+	}
+	.memArea-orderbody span{
+		font-size: 14px;
+		display:block;
+		color:#555;
+		text-align: center;
+		margin: 0;
+		height: 40px;
+		border:1px solid #eee;
+	}
+	.memArea-orderbody{
+		border: none;
+		background-color: #fff;
+	}
+}
