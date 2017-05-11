@@ -1,0 +1,41 @@
+.memLogin{
+	width: 100%;
+}
+.memLogin-container{
+	max-width: 1200px;
+	margin: auto;
+}
+.memLogin-contain{
+	margin: auto;
+	width: 300px;
+	height: 300px;
+	border:1px solid #f00;
+	box-sizing: border-box;
+	margin-top: 80px;
+	box-shadow: 0px 0px 3px 3px rgba(0,0,0,.1);
+}
+.memLogin-contain img{
+	width: 100%;
+}
+.memLogin-account,.memLogin-psw{
+	padding-left: 5%;
+	padding-top: 8%;
+}
+
+.memLogin-account input,.memLogin-psw input{
+	padding-left: 2%;
+}
+.memLogin-submit{
+	text-align: center;
+	padding-top: 15%;
+}
+.memLogin-submit input{
+	width: 100px;
+	height: 30px;
+	border:none;
+	border-radius: 5px;
+	font-family: '微軟正黑體';
+	color:#fff;
+	background-color: #a30707;
+	box-shadow: 0px 0px 3px 3px rgba(0,0,0,.1);
+}
