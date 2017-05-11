@@ -1,19 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta charset="UTF-8">
-	<title>會員註冊</title>
-	<link rel="stylesheet" type="text/css" href="../css/normalize.css">
-	<link rel="stylesheet" type="text/css" href="../css/index.css">
-	<link rel="stylesheet" type="text/css" href="../css/memRegister.css">
-	<script type="text/javascript" src="../js/memRegister.js"></script>
-</head>
-<body>
+<?php 
+	// include '../common/common.php';
+	include '../views/header.php';
+?>
 	<div class="memRegister">
 		<div class="memRegister-container">
 			<div class="memRegister-container">
-				<img src="../images/Searchbox-pon.png">
+				<img src="../assets/images/Searchbox-pon.png">
 				<div class="memRegister-title">會員註冊</div>
 				<div class="memRegister-input">
 					<label for="memRegisteraccount">帳號：</label>
@@ -57,5 +49,7 @@
 			</div>
 		</div>
 	</div>
-</body>
-</html>
+
+<?php 
+	include '../views/footer.php';
+?>

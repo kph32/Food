@@ -1,36 +1,28 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta charset="UTF-8">
-	<title>Document</title>
-	<link rel="stylesheet" type="text/css" href="../css/normalize.css">
-	<link rel="stylesheet" type="text/css" href="../css/index.css">
-	<link rel="stylesheet" type="text/css" href="../css/memArea.css">
-	<script type="text/javascript" src="../js/memArea.js"></script>
-</head>
-<body>
+<?php 
+	// include '../common/common.php';
+	include '../views/header.php';
+?>
 	<div class="memArea">
 		<div class="memArea-container">
 			<div class="memArea-All col-sm-12 col-xs-12">
 				<div class="memArea-title col-sm-12">
-					<a href="index.html">
-						<img src="../images/Navbar-logo.png" alt="回首頁" class="col-sm-1 col-xs-0">
+					<a href="../index.html">
+						<img src="../assets/images/Navbar-logo.png" alt="回首頁" class="col-sm-1 col-xs-0">
 					</a>
 					<div class="memArea-titleTxt col-sm-10 col-xs-12">會員專區</div>
 				</div>
 				<div class="memArea-box col-sm-2 col-xs-12"  id="memtab">
 					<div class="memArea-tab col-xs-3" onclick="memArea(event,'memtab-1')">
-					<img src="../images/memarea-info.png">基本資料</div>
+					<img src="../assets/images/memarea-info.png">基本資料</div>
 
 					<div class="memArea-tab col-xs-3" onclick="memArea(event,'memtab-2')">
-					<img src="../images/memarea-msg.png">留言紀錄</div>
+					<img src="../assets/images/memarea-msg.png">留言紀錄</div>
 
 					<div class="memArea-tab col-xs-3" onclick="memArea(event,'memtab-3')">
-					<img src="../images/memarea-collect.png">收藏攤商</div>
+					<img src="../assets/images/memarea-collect.png">收藏攤商</div>
 
 					<div class="memArea-tab col-xs-3" onclick="memArea(event,'memtab-4')">
-					<img src="../images/memarea-order.png">訂單紀錄</div>
+					<img src="../assets/images/memarea-order.png">訂單紀錄</div>
 				
 				</div>
 				<div class="memArea-box2 col-sm-10 col-xs-12">
@@ -89,7 +81,7 @@
 								<div class="memArea-contain-title">收藏攤商紀錄</div>
 								<div class="memArea-box3 col-sm-12 col-xs-12">
 									<div class="memArea-collect-img col-sm-2 col-xs-3">
-										<img src="../images/MemAreaCollect-shop.jpg" />
+										<img src="../assets/images/MemAreaCollect-shop.jpg" />
 									</div>
 									<div class="memArea-collect-shop col-sm-8 col-xs-9">
 										<span class="col-sm-12 col-xs-12">好兇蛋餅</span>
@@ -135,16 +127,11 @@
 							</div>
 						</div>
 					</div>
-
-
-
-
-
 				</div>
 			</div>
 		</div>
 	</div>
-</body>
-</html>
 
-
+<?php 
+	include '../views/footer.php';
+?>
