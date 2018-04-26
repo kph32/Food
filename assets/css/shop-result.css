@@ -1,0 +1,97 @@
+.ShopResult-Shoplist{
+	cursor: pointer;
+}
+.ShopResult{
+	width: 100%;
+	margin: auto;
+}
+.ShopResult-container{
+	max-width: 1200px;
+	margin: auto;
+}
+.ShopResult-orderby-txt{
+	font-size: 18px;
+	font-weight: 500;
+	text-align: right;
+	line-height: 70px;
+	color:#f36;
+}
+.ShopResult-orderby-icon img{
+	width: 20%;
+	float: right;
+	margin: 5px;
+	text-align: right;
+}
+.ShopResult-cardAll{	
+	margin-top: 40px;
+}
+
+.ShopResult-card{
+	cursor: pointer;
+	padding: 10px;
+	box-sizing: border-box;
+}
+.ShopResult-box{
+	box-shadow: 0px 0px 3px 3px rgba(0,0,0,.2); 
+}
+.ShopResult-head{
+	height: 20px;
+	background-color: #df4833;
+}
+.ShopResult-card img{
+	width: 100%;
+	/*height: 220px;*/
+}
+.ShopResult-title{
+	font-size: 16px;
+	color: #df4833;
+	padding: 15px;
+	font-weight: 700;
+}
+.ShopResult-time{
+	font-size: 14px;
+	color: #777;
+	padding: 5px 15px;
+}
+.ShopResult-add{
+	font-size: 14px;
+	color:#777;
+	padding: 5px 15px 10px;
+}
+.ShopResult-submit{
+	display: none;
+}
+.ShopResult-score{
+	font-size: 14px;
+	color: #777;
+	padding: 5px 15px;
+}
+#ShopResult-submit {
+    font-size: 14px;
+    color: #777;
+    padding: 5px 10px;
+    margin: 0 15px 10px;
+}
+
+@media screen and (max-width: 768px) and (min-width: 415px){
+	.ShopResult-cardAll{
+		margin-top: 10px;
+	}
+	.ShopResult-orderby-icon img{
+		width: 20%;
+	}
+}
+@media screen and (max-width: 415px){
+	.ShopResult-cardAll{
+		margin-top: 0px;
+	}
+	.ShopResult-card img{
+		width: 100%;
+		height: auto;
+	}
+	.ShopResult-card{
+		padding: 5px;
+		width: 100%;
+	}
+
+}

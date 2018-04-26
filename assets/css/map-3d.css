@@ -1,0 +1,764 @@
+/**{outline: 1px solid #0Ff}*/
+
+.map-3d{
+	width: 100%;
+	height: 84vh;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+10,fff2cc+49,ffffcc+100 */
+	background: #ffffff; /* Old browsers */
+	background: -moz-linear-gradient(top, #ffffff 10%, #ffeebc 49%, #fbfbad 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, #ffffff 10%,#ffeebc 49%,#fbfbad 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, #ffffff 10%,#ffeebc 49%,#fbfbad 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffcc',GradientType=0 ); /* IE6-9 */
+	overflow: hidden;
+  position: relative;
+  z-index: 100;
+}
+
+.map-3d-container{
+	text-align: center;
+	max-width: 1200px;
+	height: 65vh;
+	margin: auto;
+	position: relative;
+	z-index: 1;
+
+}
+.map-3d-saerchResultTxt p{
+	margin: 0;
+}
+.map-3d-saerchResultTxt{
+	font-size: 22px;
+	color: #f27b46;
+	text-align: center;
+	/*margin-top: 2%;*/
+	/*margin-bottom: 2%;*/
+	padding: 10px;
+	line-height: 32px;
+  box-sizing: border-box;
+}
+
+.map-3d-strongNumber{
+	font-size: 30.5px;
+	color: #f69d26;
+}
+
+.map-3d-container p{
+	position: absolute;
+	line-height: 30px;
+	text-align: left;
+	color: #5c1d00;
+	z-index: 5;
+	left: 18%;
+	top: 0%;
+  font-size: 18px;
+}
+
+.map-3d-Mobile{
+	width: 100%;
+	height: 55vh;
+	padding: 10px;
+	box-sizing: border-box;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	z-index: 10;
+
+}
+
+#map-3d-Device{
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  margin: auto;
+  z-index: 10;
+ 
+}
+
+/*------------------------------------------------*/
+#truckMove4{
+  transform: translate(295px ,9px);
+  position: absolute;
+  /*animation: truckMoveII 20s linear infinite;*/
+  /*transition: 2s;*/
+  cursor: pointer;
+  /*opacity:0;*/
+  z-index: -100;
+}  
+#truck4_1_{
+  transform: translate(0px ,0px);
+  position: absolute;
+  animation: truckMoveIIII 50s linear infinite;
+  /*transition: 2s;*/
+  cursor: pointer;
+   opacity:0;
+   display:block ;
+   z-index: -100;
+}
+#truck4R{
+  transform: translate(-1000px ,0px);
+  position: absolute;
+  animation: truckMoveIIIIR 50s linear infinite;
+  animation-delay: 5s;
+  cursor: pointer;
+  opacity:0;
+  display:block ;
+  z-index: -100;
+}
+#truck4L{
+  transform: translate(-1000px ,0px);
+  position: absolute;
+  animation: truckMoveIIIIL 50s linear infinite;
+  animation-delay: 10s;
+  cursor: pointer;
+  opacity:0;
+  display:block ;
+  z-index: -100;
+}
+#truckMove4Parking{
+  transform: translate(-1000px ,0px);
+  position: absolute;
+  animation: truckMoveIIIIParking 50s linear infinite;
+  animation-delay: 17.5s;
+  cursor: pointer;
+  opacity:0;
+  display:block ;
+  z-index: -100;
+}
+#location4-g{
+  transform:  translate(300px ,0px);
+  position: absolute;
+  animation: location4 50s linear infinite;
+  cursor: pointer;
+  z-index: -100;
+}
+@keyframes location4{
+  0%{
+      transform: translate(300px ,0px);
+    }
+  10%{
+      transform: translate(60px ,149px);
+    }
+  20%{
+      transform: translate(224px ,265px);
+  }
+  35%{
+      transform: translate(-88px ,85px);
+  }
+  40%{
+      transform: translate(-38px ,55px);
+  }
+  50%{
+      transform: translate(-38px ,55px);
+  }
+  55%{
+      transform: translate(-70px ,81px);
+    }
+  60%{
+      transform: translate(46px ,157px);
+    }
+  70%{
+    transform: translate(300px ,0px);
+  }
+}
+@keyframes truckMoveIIII{
+  0%{ 
+      transform: translate(0px ,0px);
+      opacity:1;
+    }
+ 
+  10%{
+      transform: translate(-242px ,144px);
+      opacity:1;
+  }
+  10.001%{
+      transform: translate(-1000px ,0px);
+      opacity:0;
+  }
+  74.999%{
+      transform: translate(-1000px ,0px);
+      opacity:0;
+  }
+  75%{ 
+      transform: translate(0px ,0px);
+      opacity:1;
+    }
+
+  100%{
+      opacity:1;
+  }
+}
+@keyframes truckMoveIIIIR{
+  0%{ 
+      transform: translate(160px ,96px);
+      opacity:1;
+    }
+
+  10%{
+      transform: translate(339px ,201px);
+      opacity:1;
+  }
+  10.001%{
+      transform: translate(-1000px ,0px);
+      opacity:0;
+  }
+  44.999%{
+      transform: translate(-1000px ,0px);
+      opacity:0;
+  }
+  45%{
+      transform: translate(50px ,30px);
+      opacity:1;
+  }
+  50%{
+      transform: translate(160px ,96px);
+      opacity:1;
+  }
+  
+  50.001%{
+      transform: translate(-1000px ,0px);
+      opacity:0;
+  }
+
+  100%{
+      transform: translate(-1000px ,0px);
+      opacity:0;
+  }
+}
+@keyframes truckMoveIIIIL{
+  0%{ 
+      transform:translate(336px ,377px);
+      opacity:1;
+    }
+ 
+  15%{
+      transform: translate(36px ,198px);
+      opacity:1;
+  }
+  15.001%{
+      transform: translate(-1000px ,0px);
+      opacity:0;
+  }
+  100%{
+      transform: translate(-1000px ,0px);
+      opacity:0;
+  }
+}
+@keyframes truckMoveIIIIParking{
+  0%{ 
+      transform:translate(50px ,194px);
+      opacity:1;
+    }
+  5%{
+      transform: translate(80px ,165px);
+  }
+  15%{
+      transform: translate(80px ,165px);
+  }
+  20%{
+      transform:translate(50px ,194px);
+      opacity:1;
+  }
+  20.001%{
+      transform: translate(-1000px ,0px);
+      opacity:0;
+  }
+  24.999%{
+      transform: translate(-1000px ,0px);
+      opacity:0;
+  }
+  25%{
+      transform: translate(163px ,265px);
+      opacity:1;
+  }
+  35%{
+      transform: translate(416px ,113px);
+      opacity:1;
+  }
+  40%{
+      transform: translate(416px ,113px);
+      opacity:1;
+  }
+  40.001%{
+      transform: translate(-1000px ,0px);
+      opacity:0;
+  }
+  100%{
+      transform: translate(-1000px ,0px);
+      opacity:0;
+  }
+}
+
+/*-----------------------------------------*/
+#truck2_1_{
+  transform: translate(-1000px ,0px);
+  position: absolute;
+  animation: truckMoveII 20s linear infinite;
+  cursor: pointer;
+  opacity:0;
+}
+#truck2F{
+  transform: translate(-1000px ,0px);
+  position: absolute;
+  animation: truckMoveIIBack 20s linear infinite;
+  animation-delay: 10s;
+  cursor: pointer;
+  opacity:0;
+}
+
+#location1-g{
+  position: absolute;
+  cursor: pointer;
+  transform-style: preserve-3d;
+  transition:  1.0s linear infinite;
+  transition: 1s;
+}
+#location2-g{
+  position: absolute;
+  animation: location2 40s linear infinite;
+  cursor: pointer;
+  transform-style: preserve-3d;
+  transition:  1.0s linear infinite;
+  transition: 1s;
+}
+#location3-g{
+  position: absolute;
+  cursor: pointer;
+  transform-style: preserve-3d;
+  transition:  1.0s linear infinite;
+  transition: 1s;
+}
+#location5-g{
+  position: absolute;
+  cursor: pointer;
+  transform-style: preserve-3d;
+  transition:  1.0s linear infinite;
+  transition: 1s;
+}
+/*---------------------------------------------*/
+@keyframes truckMoveII{
+  0%{ 
+      transform:translate(0px ,0px);
+      opacity:1;
+    }
+  25%{
+      transform: translate(-348px ,-203px);
+    }
+ 
+  50%{
+      transform: translate(-348px ,-203px);
+      opacity:1;
+  }
+  50.001%{
+      transform: translate(-1000px ,0px);
+      opacity:0;
+  }
+  100%{
+      transform: translate(-1000px ,0px);
+      opacity:0;
+  }
+}
+@keyframes truckMoveIIBack{
+  0%{ 
+      opacity:1;
+      transform: translate(187px ,228px);
+    } 
+ 
+  25%{
+      transform:translate(538px ,433px);
+    }
+  50%{
+      opacity:1;
+      transform:translate(538px ,433px);
+  }
+  50.001%{
+      transform: translate(-1000px ,0px);
+      opacity:0;
+  }
+  100%{
+      transform: translate(-1000px ,0px);
+      opacity:0;
+  }
+}
+@keyframes location2{
+  0%{
+      transform:translate(0px ,0px);
+    }
+  12.5%{
+      transform: translate(-348px ,-203px);
+    }
+  25%{
+      transform: translate(-348px ,-203px);
+  }
+  37.5%{
+      transform: translate(0px ,0px);
+  }
+  50%{
+      transform: translate(0px ,0px);
+  }
+
+  62.5%{
+      transform: translate(-348px ,-203px);
+    }
+  75%{
+      transform: translate(-348px ,-203px);
+    }
+  87.5%{
+      transform: translate(0px ,0px);
+  }
+  100%{
+      transform: translate(0px ,0px);
+  }
+}
+.map-3d-Device-objects{
+    height: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    margin: auto;
+    z-index: 11;
+    /*animation: rubberBand 1s linear infinite;*/
+}
+
+/*----------------------------------------*/
+#truckMove1,#truckMove3,#truckMove5{
+  position: absolute;
+  cursor: pointer;
+} 
+#location1,#location2,#location3,#location4,#location5{
+  animation: flowUpDown 0.8s linear alternate infinite;
+}
+#truckMove1,#truckMove2,#truckMove3,#truckMove4,#truckMove5{
+  perspective: 100;
+}
+#truckMove1:hover #location1{
+  animation: LoRotate 0.8s linear  infinite;
+}
+#truckMove2:hover #location2{
+  animation: LoRotate 0.8s linear  infinite;
+}
+#truckMove3:hover #location3{
+  animation: LoRotate 0.8s linear  infinite;
+}
+#truckMove4:hover #location4{
+  animation: LoRotate 0.8s linear  infinite;
+}
+#truckMove5:hover #location5{
+  animation: LoRotate 0.8s linear  infinite;
+}
+@keyframes LoRotate{
+  from{
+    transform: rotateY(0deg);
+    transform-origin:50% 50%;
+    }
+  to{
+     transform: rotateY(360deg);
+    transform-origin:50% 50%;
+    }
+}
+@keyframes flowUpDown{
+  from{
+      transform: translate(0px ,0px);
+    }
+  50%{
+      transform: translate(0px ,-4px);
+
+      }to{
+      transform: translate(0px ,4px);
+    }
+}
+/*------------------------------------------------*/
+#millFan{
+  animation:fanrotate 2s linear infinite;
+}
+@keyframes fanrotate{
+  from{
+    transform: rotate(0deg);
+    transform-origin:50% 50%;
+    }to{
+    transform: rotate(180deg);
+    transform-origin:50% 50%;
+    }
+}
+
+.map-3d-cloud-g{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: 1;
+  top: 0;
+
+}
+.map-3d-Cloud1{
+	width: 100px;
+  position: absolute;
+  left: 0%;
+  top: 28%;
+  z-index: 1;
+}
+.map-3d-Cloud2{
+	width: 80px;
+	opacity: .6;
+	position: absolute;
+	left: 50%;
+	top: 19%;
+  -moz-filter: blur(2px);
+  -ms-filter: blur(2px);    
+  filter: blur(2px); 
+}
+
+.map-3d-Cloud3{
+	width: 100px;
+	opacity: .8;
+	position: absolute;
+	left: 79%;
+	top: 56%;
+
+}
+
+
+.map3DBlur{
+	-webkit-filter: blur(2px); /* Chrome, Opera */
+    -moz-filter: blur(2px);
+    -ms-filter: blur(2px);    
+     filter: blur(2px); 
+}
+.map-3d-Cloud4{
+	width: 120px;
+	opacity: .6;
+	position: absolute;
+	left: 70%;
+	top: 30%;
+	z-index: 11;
+
+
+	-webkit-filter: blur(2px); /* Chrome, Opera */
+    -moz-filter: blur(2px);
+    -ms-filter: blur(2px);    
+     filter: blur(2px); 
+}
+
+.map-3d-Cloud5{
+	width: 150px;
+	opacity: .5;
+
+	position: absolute;
+	left: 10%;
+	top: 53%;
+	z-index: 20;
+
+	-webkit-filter: blur(2px); /* Chrome, Opera */
+    -moz-filter: blur(2px);
+    -ms-filter: blur(2px);    
+     filter: blur(2px); 
+
+	-webkit-animation-name: Cloud5; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 180s; /* Safari 2.0 - 8.0 */
+    animation-name: Cloud5;
+    animation-duration: 180s;
+    animation-iteration-count: infinite;
+    
+}
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes Cloud5 {
+    0%   {left:10%; top:53%;}
+    50%  {left:80%; top:53%;}
+    100% {left:10%; top:53%;}
+}
+/* Standard syntax */
+@keyframes Cloud5 {
+    0%   {left:10%;}
+    50%  {left:80%;}
+    100% {left:10%;}
+}
+/*----------------------------------------------------*/
+.hvr-float-shadow {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  position: relative;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+.map-3d-btn{
+	position: relative;
+	display: inline-block;
+	width: 135px;
+	z-index: 20;
+	top: 72%;
+  left: 21%;
+}
+.map-3d-btn:hover{
+	cursor: pointer;
+	animation: pulse 1s linear  infinite;
+
+  	/*animation-name: animation;
+  	animation-duration: 1000ms;*/
+		
+}
+
+#map-3d-Cloud12p{
+  width: 24%;
+    opacity: 0.9;
+    position: absolute;
+    left: 11%;
+    /*top: 41%;*/
+    top: 55%;
+    z-index: 1;
+  /*  -webkit-filter: blur(2px);
+    -moz-filter: blur(2px);
+    -ms-filter: blur(2px);
+    filter: blur(2px);*/
+}
+#map-3d-Cloud13p{
+  width: 16%;
+    opacity: 0.6;
+    position: absolute;
+    left: 71%;
+    /*top: 52%;*/
+    top: 30%;
+    z-index: 1;
+/*    -webkit-filter: blur(2px);
+    -moz-filter: blur(2px);
+    -ms-filter: blur(2px);
+    filter: blur(2px);*/
+}
+/*@keyframes animation { 
+  0% { transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  3.4% { transform: matrix3d(1.316, 0, 0, 0, 0, 1.407, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  4.7% { transform: matrix3d(1.45, 0, 0, 0, 0, 1.599, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  6.81% { transform: matrix3d(1.659, 0, 0, 0, 0, 1.893, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  9.41% { transform: matrix3d(1.883, 0, 0, 0, 0, 2.168, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  10.21% { transform: matrix3d(1.942, 0, 0, 0, 0, 2.226, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  13.61% { transform: matrix3d(2.123, 0, 0, 0, 0, 2.332, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  14.11% { transform: matrix3d(2.141, 0, 0, 0, 0, 2.331, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  17.52% { transform: matrix3d(2.208, 0, 0, 0, 0, 2.239, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  18.72% { transform: matrix3d(2.212, 0, 0, 0, 0, 2.187, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  21.32% { transform: matrix3d(2.196, 0, 0, 0, 0, 2.069, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  24.32% { transform: matrix3d(2.151, 0, 0, 0, 0, 1.96, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  25.23% { transform: matrix3d(2.134, 0, 0, 0, 0, 1.938, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  29.03% { transform: matrix3d(2.063, 0, 0, 0, 0, 1.897, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  29.93% { transform: matrix3d(2.048, 0, 0, 0, 0, 1.899, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  35.54% { transform: matrix3d(1.979, 0, 0, 0, 0, 1.962, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  36.74% { transform: matrix3d(1.972, 0, 0, 0, 0, 1.979, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  41.04% { transform: matrix3d(1.961, 0, 0, 0, 0, 2.022, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  44.44% { transform: matrix3d(1.966, 0, 0, 0, 0, 2.032, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  52.15% { transform: matrix3d(1.991, 0, 0, 0, 0, 2.006, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  59.86% { transform: matrix3d(2.006, 0, 0, 0, 0, 1.99, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  63.26% { transform: matrix3d(2.007, 0, 0, 0, 0, 1.992, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  75.28% { transform: matrix3d(2.001, 0, 0, 0, 0, 2.003, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  85.49% { transform: matrix3d(1.999, 0, 0, 0, 0, 2, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  90.69% { transform: matrix3d(1.999, 0, 0, 0, 0, 1.999, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  100% { transform: matrix3d(2, 0, 0, 0, 0, 2, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); } 
+}*/
+/*@keyframes pulse {
+  from {
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+
+  to {
+    transform: scale3d(1, 1, 1);
+  }
+}*/
+
+@keyframes rubberBand {
+  from {
+    transform: scale3d(1, 1, 1);
+  }
+
+  30% {
+    transform: scale3d(1.25, 0.75, 1);
+  }
+
+  40% {
+    transform: scale3d(0.75, 1.25, 1);
+  }
+
+  50% {
+    transform: scale3d(1.15, 0.85, 1);
+  }
+
+  65% {
+    transform: scale3d(.95, 1.05, 1);
+  }
+
+  75% {
+    transform: scale3d(1.05, .95, 1);
+  }
+
+  to {
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+
+
+@media screen and (max-width: 768px){
+  .map-3d{
+  width: 100%;
+  height: 84vh;
+}
+  .map-3d-container{
+  text-align: center;
+  max-width: 100%;
+  height: 50vh;
+  margin: auto;
+  position: relative;
+  z-index: 1;
+
+  }
+
+  .map-3d-Device{
+    width: 93vw;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    margin: auto;
+  }
+  .map-3d-Device-objects{
+    height: 56vw;
+    position: absolute;
+    left: 0px;
+    right: 0;
+    top: 26%;
+    margin: auto;
+    z-index: 11;
+  }
+}
+
+
+@media screen and (max-width: 414px){
+  .map-3d{
+  width: 100%;
+  height: 73vh;
+  }
+
+  .map-3d-Device-objects{
+  top: 19%;
+  }
+
+  .map-3d-container p {
+    left: 7%;
+    font-size: 16px; 
+} 
+  .map-3d-Cloud3 {
+   display: none;
+  }
+  #map-3d-Cloud12p {
+    left: -6%;
+  }
+}

@@ -1,0 +1,356 @@
+#Navbar-submitphone{
+	display: none;
+}
+.Navbar{
+	width: 100%;
+	/*padding-top: 5px;*/
+	background-color: #fff;
+	height: 100px;
+}
+.Navbar-container{
+	text-align: center;
+	margin: auto;
+	max-width: 1200px;
+}
+.Navbar-search-go img{
+	height: 70%;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	margin:auto;
+
+}
+#Navbar-submit{
+	display: none;
+}
+.Navbar-container{
+	position: relative;
+}
+.Navbar-container ul{
+	margin: 0;
+}
+.Navbar-li{
+	margin: 25px 10px 10px 10px;
+	color:#333;
+	font-family: 'Microsoft JhengHei';
+	text-decoration: none;
+	line-height: 1.5;
+	transition: .3s;
+}
+.Navbar-li:hover{
+	color:#ec5d5d;
+}
+.Navbar-li img{
+	height: 30px;
+}
+.Navbar-search{
+	width: 65%;
+	margin-top: 35px;
+	height: 37px;
+	border:1px solid #ec5d5d;
+	padding-left: 10px;
+	font-family: 'Microsoft JhengHei';
+	font-size: 14px;
+	float: left;
+	margin-left: 13px;
+}
+.Navbar-search-go{
+	margin-top: 35px;
+	width: 15%;
+	height: 41px;
+	background-color:#ec5d5d;
+	float: left; 
+	cursor: pointer;
+	position: relative;
+}
+.Navbar-search-go::before{
+	content: url(../images/Navbar-search.png);
+	position: absolute;
+	top: 20%;
+	left: 22%;
+}
+.Navbar-login{
+	float: left;
+	margin-top: 25px;
+	width: 30px;
+	padding-left: 2px;
+}
+.Navbar-shoplogin{
+	float: left;
+	margin-top: 20px;
+	width: 30px;
+	padding-left: 2px;
+}
+.Navbar-border{
+	position: relative;
+	left: 3%;
+
+}
+.Navbar-border::before{
+	content: '';
+	height: 40px;
+	border-left:1px solid #f00; 
+	position: absolute;
+	left: -35%;
+	top:45%;
+
+}
+.Navbar-member{
+	float: left;
+	padding-left: 2px;
+	margin-top: 33px;
+	font-size: 17px;
+	font-family: 'Microsoft JhengHei';
+	color: #ff8100;
+}
+
+.Navbar-memtxt{
+	float: left;
+	font-family: 'Microsoft JhengHei';
+	font-size: 13px;
+	width: 35%;
+	color: #777;
+	text-decoration: none;
+	cursor: pointer;
+}
+.Navbar-LightboxShow{
+	position: fixed;
+	position: absolute;
+	top:0;
+	width:100%;
+	height: 100vh;
+	background-color: rgba(0,0,0,.5);
+	z-index: 9999;
+	display: none;
+}
+.Navbar-Lightbox{
+	width: 400px;
+	height: 300px;
+	background-color: #fff;
+	border:1px solid #aaa;
+	margin: auto;
+	position: relative;
+	top:20%;
+	border-radius: 15px;
+	
+}
+.Navbar-Lightbox-title{
+	font-size: 25px;
+	font-family: 'Microsoft JhengHei';
+	font-weight: 700;
+	margin: auto;
+	text-align: center;
+	margin-top: 30px;
+	color:#ec5d5d;
+}
+.Navbar-account{
+	height: 50px;
+	width: 15%;
+	font-size: 16px;
+	line-height: 50px;
+	float: left;
+	margin-top: 30px;
+	margin-left: 30px;
+	text-align: right;
+}
+.Navbar-password{
+	height: 50px;
+	width: 15%;
+	font-size: 16px;
+	line-height: 50px;
+	float: left;
+	margin-left: 30px;
+	text-align: right;
+}
+.Navbar-input1{
+	height: 50px;
+	width: 70%;
+	padding-left: 10px;
+	line-height: 50px;
+	float: left;
+	margin-top: 30px;
+}
+.Navbar-input1 input,.Navbar-input2 input{
+	width: 90%;
+	height: 30px;
+}
+
+.Navbar-input2{
+	height: 50px;
+	width: 70%;
+	padding-left: 10px;
+	line-height: 50px;
+	float: left;
+}
+.Navbar-submitLogin{
+	width: 400px;
+	margin: auto;
+	text-align: center;
+}
+.Navbar-submitLogin input{
+	margin-top: 30px;
+	border:none;
+	padding:10px 25px;
+	border-radius: 5px;
+	font-family: 'Microsoft JhengHei';
+	background-color: #ec5d5d;
+	color:#fff;
+	transition: .5s;
+}
+.Navbar-submitLogin input:hover{
+	background-color: #e33;
+}
+
+@media screen and (max-width: 768px){
+	.Navbar{
+		height: 66px;
+		position: fixed;
+		z-index: 9999;
+	}
+	.Navbar-rwd{
+		width: 100%;
+		margin: 0 auto;
+		text-align: center;
+		position: absolute;
+		position: fixed;
+		top:0;
+		background-color: #fff;
+		z-index: 1000;
+	}
+	.Navbar-rwdlogo{
+		width: 105px;
+		position: absolute;
+		left: 0;
+		right: 0;
+		margin: auto;
+
+/*		margin: auto;
+	     width: 31vw; 
+	    left: calc(100vw/2);
+	    right: 0;
+	    top: 0;
+	    position: relative;*/
+	}
+	.Navbar-search{
+		margin: 0;
+		width: 70%;
+	}
+	.Navbar-search-go{
+		margin: 0;
+		width: 21%;
+		height: 41px;
+	}
+	.Navbar-li img{
+		width: 40px;
+		vertical-align: middle;
+		padding-right: 20px;
+	}
+	.Navbar-rwdlogin img{
+		padding-top: 10px;
+		width: 40px;
+		vertical-align: middle;
+		padding-left: 5px;
+	}
+	.Navbar-li{
+		font-family: 'Microsoft JhengHei';
+		color: #777;
+		font-size: 19px;
+		vertical-align: middle;
+		text-align: left;
+	}
+	.Navbar-logintxt{
+		font-family: 'Microsoft JhengHei';
+		color: #aaa;
+		font-size: 19px;
+		vertical-align: middle;
+		text-decoration: none;
+		line-height: 4;
+		float: left;
+	}
+}
+#loginBox{
+	/*padding-top:5%;*/
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	background-color: rgba(50,50,50,0.6);
+	margin: auto;
+	z-index: 9999999;
+}
+#tableLogin{
+	width: 100%;
+	height: 100%;
+	box-shadow: 0 0.1rem 0.4rem rgba(0,0,0,.5);
+	background-color: rgba(220,70,55,.5);
+}
+#tableLogin td{
+	padding: 0px 10px;
+}
+#tableLogin input{
+	height: 24px;
+	/*width: 14vw;*/
+	background-color:#fdfdfd;
+	border: 1px solid #e8e8e8;
+	border-radius: .4rem;
+}
+#loginBox .memLogin{
+	width: 100%;
+}
+#loginBox .memLogin-container{
+	max-width: 1200px;
+	margin: auto;
+}
+#loginBox .memLogin-contain{
+	margin: auto;
+	width: 300px;
+	height: 300px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	box-shadow: 0 0.2rem 0.4rem rgba(0,0,0,.09);
+	background-color: rgba(250,250,250,0.9);
+}
+#loginBox .memLogin-contain img{
+	width: 100%;
+}
+#loginBox .memLogin-account,.memLogin-psw{
+	padding-left: 5%;
+	padding-top: 8%;
+}
+
+#loginBox .memLogin-account input,.memLogin-psw input{
+	padding-left: 2%;
+}
+#loginBox .memLogin-submit{
+	text-align: center;
+	padding-top: 15%;
+}
+#loginBox .memLogin-submit input{
+	width: 100px;
+	height: 30px;
+	border:none;
+	border-radius: 5px;
+	font-family: '微軟正黑體';
+	color:#fff;
+	background-color: #a30707;
+	box-shadow: 0px 0px 3px 3px rgba(0,0,0,.1);
+}
+
+@media screen and (max-width: 414px){
+	.Navbar-memtxt{
+		font-size: 19px;
+	}
+	.Navbar-logintxt:nth-child(2){
+		color: #ff8100;
+	}
+
+	
+}

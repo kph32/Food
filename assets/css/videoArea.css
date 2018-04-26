@@ -1,0 +1,96 @@
+
+.videoArea{
+	margin-top: -20px;
+    width: 99vw;
+    height: 81vh;
+	background: linear-gradient(to bottom, #a0ffb4 0%,#62ffd0 51%,#20fff0 100%);
+	overflow: hidden;
+}
+.videoArea-container{
+	max-width: 1200px;
+	margin: auto;
+}
+
+.trans3d
+{
+	/*perspective: 1700px;*/
+	-webkit-transform-style: preserve-3d;
+	-webkit-transform: translate3d(0, 0, 0);
+	-moz-transform-style: preserve-3d;
+	-moz-transform: translate3d(0, 0, 0);
+	-ms-transform-style:preserve-3d;
+	-ms-transform: translate3d(0, 0, 0);
+	transform-style:preserve-3d;
+	transform: translate3d(0, 0, 0);
+
+	/*-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	-ms-backface-visibility:hidden;
+	backface-visibility:hidden;*/
+}
+
+#contentContainer{
+	position: absolute;
+    /* margin-left: -500px; */
+    /* margin-top: -300px; */
+    left: 51%;
+    top: 37%;
+    /* width: 1000px; */
+    /* height: 75vh; */
+}
+
+#carouselContainer{
+	position:absolute;
+	margin-left:-500px;
+	margin-top:-500px;
+	left:50%;
+	top:50%;
+	width:1000px;
+	height:110vh;
+}
+
+.carouselItem{
+	width:320px;
+	height:130px;
+	position:absolute;
+	left:50%;
+	top:50%;
+	margin-left:-160px;
+	margin-top:-90px;
+	visibility:hidden;
+}
+
+.carouselItemInner{
+	width:320px;
+	height:130px;
+	position:absolute;
+	font-size:72px;
+	left:50%;
+	top:50%;
+	margin-left:-160px;
+	margin-top:-90px;
+	text-align:center;
+	padding-top:50px;
+	
+}
+.trans3d img{
+	width: 450px;
+}
+
+.videoArea-xs-img{
+	width: 200px;
+	padding: 20px;
+	margin-bottom: 30px;
+}
+
+@media screen and (max-width: 768px){ 
+ .videoArea{ 
+  margin: 0; 
+  width: 100vw; 
+  height: 100vh; 
+  background: linear-gradient(to bottom, #a0ffb4 0%,#62ffd0 51%,#20fff0 100%); 
+ } 
+ .videoArea a img{ 
+  width: 100vw; 
+ } 
+}

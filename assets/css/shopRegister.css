@@ -1,0 +1,402 @@
+/*xs*/
+@media screen and (max-width:767px){
+.ShopRegister-width{
+	margin:auto;
+	font-family:'微軟正黑體';
+}
+.ShopRegister-box{
+	margin-top:5px;
+	padding-top: 10px;
+	text-align: center;
+	box-shadow: 0 0.1rem 0.4rem rgba(0,0,0,.09);
+	
+}
+.ShopRegister-Shopnav img{
+	width: 65%;
+}
+.ShopRegister-box .ShopRegister-account{
+	box-shadow: 0 0.1rem 0.4rem rgba(20,20,20,.09);
+}
+.ShopRegister-box .ShopRegister-account h5{
+	margin: 0px;
+	background-color: #F7931E;
+	color: #fff;
+	text-align: center;
+	padding: 10px;
+	font-size: 20px;
+}
+.ShopRegister-box .ShopRegister-account ul{
+	margin:20px 0px 30px;
+	padding-bottom: 10px;
+}
+.ShopRegister-box li{
+	list-style:none;
+	margin-bottom: 15px;
+}
+.ShopRegister-box li .ShopRegister-text{
+	float:left;
+	width: 100%;
+	text-align: center;
+}
+.ShopRegister-box .ShopRegister-inp input{
+	width: 65%;
+}
+.ShopRegister-box .ShopRegister-shopinfo{
+	box-shadow: 0 0.1rem 0.4rem rgba(20,20,20,.09);
+}
+.ShopRegister-box .ShopRegister-shopinfo h5{
+	margin: 0px;
+	background-color: #F7931E;
+	color: #fff;
+	text-align: center;
+	padding: 10px;
+	font-size: 20px;
+}
+.ShopRegister-box .ShopRegister-shopinfo ul{
+	margin:20px 0px 30px;
+	padding-bottom: 10px;
+}
+.ShopRegister-box .ShopRegister-communication{
+	box-shadow: 0 0.1rem 0.4rem rgba(20,20,20,.09);
+}
+.ShopRegister-box .ShopRegister-communication h5{
+	margin: 0px;
+	background-color: #F7931E;
+	color: #fff;
+	text-align: center;
+	padding: 10px;
+	font-size: 20px;
+}
+.ShopRegister-box .ShopRegister-communication ul{
+	margin:20px 0px 30px;
+	padding-bottom: 10px;
+}
+.ShopRegister-box .ShopRegister-safety{
+	box-shadow: 0 0.1rem 0.4rem rgba(20,20,20,.09);
+}
+.ShopRegister-box .ShopRegister-safety h5{
+	margin: 0px;
+	background-color: #F7931E;
+	color: #fff;
+	text-align: center;
+	padding: 10px;
+	font-size: 20px;
+}
+.ShopRegister-box .ShopRegister-safety ul{
+	margin:20px 0px 30px;
+	padding-bottom: 10px;
+}
+.ShopRegister-box .ShopRegister-safety span{
+	margin-left: 3px;
+}
+.ShopRegister-box .ShopRegister-safety .contract{
+	margin-top: -80px;
+	margin-bottom: 90px;
+}
+.ShopRegister-box .ShopRegister-safety .contract textarea{
+	position: relative;
+	top: 80px;
+	width: 60%;
+}
+.ShopRegister-box .ShopRegister-agree{
+	line-height: 40px;
+	margin:20px auto;
+	background-color: #F7931E;
+	height: 40px;
+	padding: 0px 10px;
+	border-radius: 2px;
+	display: inline-block;
+	text-decoration: none;
+	color:#fff;
+}
+#feedback{
+  color: #000;
+  background-image: url('../images/warning.png');
+  background-repeat: no-repeat;
+  background-position: 2px 14px;
+  padding: 10px 322px 0 26px;
+}
+
+#feedback.warning {
+	background-image: url('../images/warning.png'); 
+
+}
+#feedback.tip {
+	background-image: url('../images/tip.png');
+}
+#feedback.pass {
+	background-image: url('../images/pass.png');
+}
+.ef label{
+	margin-left: -50px; 
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*sm*/
+@media screen and (min-width:768px){
+.ShopRegister-width{
+	margin:auto;
+	font-family:'微軟正黑體';
+}
+.ShopRegister-box{
+	margin-top:10px;
+	padding-top: 30px;
+	text-align: center;
+	box-shadow: 0 0.1rem 0.4rem rgba(0,0,0,.09);
+	
+}
+.ShopRegister-box .ShopRegister-account{
+	box-shadow: 0 0.1rem 0.4rem rgba(20,20,20,.09);
+}
+.ShopRegister-box .ShopRegister-account h5{
+	margin: 0px;
+	background-color: #F7931E;
+	color: #fff;
+	text-align: center;
+	padding: 10px;
+	font-size: 20px;
+}
+.ShopRegister-box .ShopRegister-account ul{
+	margin:20px 0px 30px;
+	padding-bottom: 10px;
+}
+.ShopRegister-box li{
+	list-style:none;
+	margin-bottom: 15px;
+}
+.ShopRegister-box li .ShopRegister-text{
+	float:left;
+	width: 100%;
+	text-align: center;
+}
+.ShopRegister-box .ShopRegister-shopinfo{
+	box-shadow: 0 0.1rem 0.4rem rgba(20,20,20,.09);
+}
+.ShopRegister-box .ShopRegister-shopinfo h5{
+	margin: 0px;
+	background-color: #F7931E;
+	color: #fff;
+	text-align: center;
+	padding: 10px;
+	font-size: 20px;
+}
+.ShopRegister-box .ShopRegister-shopinfo ul{
+	margin:20px 0px 30px;
+	padding-bottom: 10px;
+}
+.ShopRegister-box .ShopRegister-communication{
+	box-shadow: 0 0.1rem 0.4rem rgba(20,20,20,.09);
+}
+.ShopRegister-box .ShopRegister-communication h5{
+	margin: 0px;
+	background-color: #F7931E;
+	color: #fff;
+	text-align: center;
+	padding: 10px;
+	font-size: 20px;
+}
+.ShopRegister-box .ShopRegister-communication ul{
+	margin:20px 0px 30px;
+	padding-bottom: 10px;
+}
+.ShopRegister-box .ShopRegister-safety{
+	box-shadow: 0 0.1rem 0.4rem rgba(20,20,20,.09);
+}
+.ShopRegister-box .ShopRegister-safety h5{
+	margin: 0px;
+	background-color: #F7931E;
+	color: #fff;
+	text-align: center;
+	padding: 10px;
+	font-size: 20px;
+}
+.ShopRegister-box .ShopRegister-safety ul{
+	margin:20px 0px 30px;
+	padding-bottom: 10px;
+}
+.ShopRegister-box .ShopRegister-safety span{
+	margin-left: 3px;
+}
+.ShopRegister-box .ShopRegister-safety .contract{
+	margin-top: -80px;
+	margin-bottom: 90px;
+}
+.ShopRegister-box .ShopRegister-safety .contract textarea{
+	position: relative;
+	top: 80px;
+}
+.ShopRegister-box .ShopRegister-agree{
+	line-height: 40px;
+	margin:20px auto;
+	background-color: #F7931E;
+	height: 40px;
+	padding: 0px 10px;
+	border-radius: 2px;
+	display: inline-block;
+	text-decoration: none;
+	color:#fff;
+}
+.ef{
+	margin-left: -32px;
+	padding: 10px 0;
+}
+#shopRegister-idDiv,#shopRegister-pswDiv2,#shopName-Div2,#phone-Div2,#shop-mailDiv{
+	display: block;
+	padding-top:30px;
+	margin-left: -24px;
+}
+
+
+}
+
+
+
+------------------------
+.ShopRegister-width{
+	margin:auto;
+	font-family:'微軟正黑體';
+}
+.ShopRegister-box{
+	margin-top:10px;
+	padding-top: 30px;
+	text-align: center;
+	box-shadow: 0 0.1rem 0.4rem rgba(0,0,0,.09);
+	
+}
+.ShopRegister-box .ShopRegister-account{
+	box-shadow: 0 0.1rem 0.4rem rgba(20,20,20,.09);
+}
+.ShopRegister-box .ShopRegister-account h5{
+	margin: 0px;
+	background-color: #F7931E;
+	color: #fff;
+	text-align: center;
+	padding: 10px;
+	font-size: 20px;
+}
+.ShopRegister-box .ShopRegister-account ul{
+	margin:20px 0px 30px;
+	padding-bottom: 10px;
+}
+.ShopRegister-box li{
+	list-style:none;
+	margin-bottom: 15px;
+}
+.ShopRegister-box li .ShopRegister-text{
+	float:left;
+	width: 100%;
+	text-align: center;
+}
+.ShopRegister-box .ShopRegister-shopinfo{
+	box-shadow: 0 0.1rem 0.4rem rgba(20,20,20,.09);
+}
+.ShopRegister-box .ShopRegister-shopinfo h5{
+	margin: 0px;
+	background-color: #F7931E;
+	color: #fff;
+	text-align: center;
+	padding: 10px;
+	font-size: 20px;
+}
+.ShopRegister-box .ShopRegister-shopinfo ul{
+	margin:20px 0px 30px;
+	padding-bottom: 10px;
+}
+.ShopRegister-box .ShopRegister-communication{
+	box-shadow: 0 0.1rem 0.4rem rgba(20,20,20,.09);
+}
+.ShopRegister-box .ShopRegister-communication h5{
+	margin: 0px;
+	background-color: #F7931E;
+	color: #fff;
+	text-align: center;
+	padding: 10px;
+	font-size: 20px;
+}
+.ShopRegister-box .ShopRegister-communication ul{
+	margin:20px 0px 30px;
+	padding-bottom: 10px;
+}
+.ShopRegister-box .ShopRegister-safety{
+	box-shadow: 0 0.1rem 0.4rem rgba(20,20,20,.09);
+}
+.ShopRegister-box .ShopRegister-safety h5{
+	margin: 0px;
+	background-color: #F7931E;
+	color: #fff;
+	text-align: center;
+	padding: 10px;
+	font-size: 20px;
+}
+.ShopRegister-box .ShopRegister-safety ul{
+	margin:20px 0px 30px;
+	padding-bottom: 10px;
+}
+.ShopRegister-box .ShopRegister-safety span{
+	margin-left: 3px;
+}
+.ShopRegister-box .ShopRegister-safety .contract{
+	margin-top: -80px;
+	margin-bottom: 90px;
+}
+.ShopRegister-box .ShopRegister-safety .contract textarea{
+	position: relative;
+	top: 80px;
+}
+.ShopRegister-box .ShopRegister-agree{
+	line-height: 20px;
+	margin:20px auto;
+	width: 10%;
+	background-color: #FFAF60;
+	height: 40px;
+	padding: 0px 10px;
+	border-radius: 5%;
+	display: inline-block;
+	text-decoration: none;
+	color:#fff;
+	cursor: pointer;
+	transition: .5s;
+}
+.ShopRegister-agree:hover{
+	color:#000; 
+}
+
+#feedback{
+  color: #000;
+  background-image: url('../images/warning.png');
+  background-repeat: no-repeat;
+  background-position: 451px 62px;
+  padding: 40px 0px 0px 3px;
+
+}
+
+#feedback.warning {
+	background-image: url('../images/warning.png');
+	 
+}
+#feedback.tip {
+	background-image: url('../images/tip.png');
+	 
+}
+#feedback.pass {
+	background-image: url('../images/pass.png');
+	 
+}
+
+
+

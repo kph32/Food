@@ -1,0 +1,504 @@
+/*xs*/
+@media screen and (max-width:767px){
+.Report-width{
+  margin:auto;
+  text-align: center;
+  height: 740vh;
+  overflow:hidden;
+}
+.Report-width .Report-box1{
+  background-image: url('../images/rice/mochi2.jpg');
+  background-size:100%;
+  height: 48vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: 9;
+}
+.Report-width .Report-box1 h2{
+	width: 100%;
+	height: 100%;
+	font-size: 30px;
+	color:#fff;
+	position: absolute;
+	text-align: center;
+	text-shadow: 1px 1px 20px #595473;
+}
+.Report-width .Report-back{   
+	background-image: url('../images/rice/canal.jpg');
+	background-position: center;
+	background-attachment: fixed;
+	height: 50vh;
+    position: relative;
+    z-index: 9;
+}
+.Report-width .Report-box2{
+	margin-top: -15vh;
+	z-index: 10;
+	position: relative;
+	border: 5px solid #fff;
+    border-radius: 15px;
+    box-shadow: 0px 0px 5px rgba(250,250,250,.9); 
+}
+.Report-width .Report-box2 .ShopReportItem-backimg{
+	background-image: url('../images/rice/back1.jpg');	
+    background-position: center;    
+    border-radius: 15px;
+    height: 60vh;
+}
+.Report-width .Report-box2 .ShopReportItem-backtext{
+	background-color: rgba(255,255,255,.95);	
+	padding-bottom: 50px;
+	padding: 1vh 5vh 0px;
+	line-height: 30px;
+	font-size: 20px;
+	position: absolute;
+	bottom: 0;
+
+ }
+ .Report-width .Report-box3{
+ 	background-color: #E2E2DD;
+	height: 70vh;
+	transform: skewY(-8deg);
+	position: relative;
+	top: -55vh;
+	z-index: 5;
+ }
+.Report-width .Report-box3 h4{
+	font-size: 35px;	
+	color: #57544B;
+	transform: skewY(8deg);
+	position: absolute;
+	bottom: -1vh;
+	left: 4vw;
+}
+.Report-width .Report-box4{	
+ 	background-color: #25292C;
+	height: 110vh;
+	transform: skewY(-8deg);
+	position: relative;
+	top: -55vh;
+	z-index: 4;
+}
+.Report-width .Report-box4 .ShopReportItem-ric{
+	width: 90%;
+	height: 90%;
+	padding: 2vw;
+	border-radius: 20%;	
+	transform: skewY(8deg);
+	margin-top: 5vh;
+}
+.Report-width .Report-box4 .ShopReportItem-text{	
+	padding: 10vh 5vh 0px;
+	line-height: 28px;
+	font-size: 16px;
+	text-align: left;
+	color: #D1D1AC;
+	transform: skewY(8deg);
+	margin-top: 3vw;
+}
+.Report-width .Report-box5{	
+ 	background-color: #E2E2DD;
+	height: 120vh;
+	transform: skewY(-8deg);
+	position: relative;
+	top: -55vh;
+	z-index: 4;
+}
+.Report-width .Report-box5 .ShopReportItem-manrice{
+	width: 90%;
+	height: 90%;
+	padding: 2vw;
+	border-radius: 20%;	
+	transform: skewY(8deg);
+	margin-top: 5vh;
+}
+.Report-width .Report-box5 .ShopReportItem-text{	
+	padding: 10vh 5vh 0px;
+	line-height: 28px;
+	font-size: 16px;
+	text-align: left;
+	transform: skewY(8deg);
+	margin-top: -10vw;
+}
+.Report-width .Report-box6{	
+ 	background-color: #fff;
+	height: 120vh;
+	transform: skewY(-8deg);
+	position: relative;
+	top: -55vh;
+	z-index: 4;
+}
+.Report-width .Report-box6 .ShopReportItem-oilrice{
+	width: 90%;
+	height: 90%;
+	padding: 2vw;
+	border-radius: 20%;	
+	transform: skewY(8deg);
+	margin-top: 5vh;
+}
+.Report-width .Report-box6 .ShopReportItem-text{	
+	padding: 5vw 2vw 0px;
+	line-height: 28px;
+	font-size: 16px;
+	text-align: left;
+	transform: skewY(8deg);
+	margin-top: 5vh;
+}
+.Report-width .Report-box7{	
+ 	background-color: #25292C;
+	height: 125vh;
+	transform: skewY(8deg);
+	position: relative;
+	top: -60vh;
+	z-index: 4;
+	color: #CBD1AC;
+}
+.Report-width .Report-box7 .ShopReportItem-gmother{
+	width: 90%;
+	padding: 2vw;
+	border-radius: 20%;	
+	transform: skewY(-8deg);
+	margin-top: 4vh;
+}
+.Report-width .Report-box7 .ShopReportItem-text{	
+	padding: 10vh 5vh 0px;
+	line-height: 28px;
+	font-size: 16px;
+	text-align: left;
+	transform: skewY(-8deg);
+	margin-top: -5vh;
+}
+.Report-width .Report-box8{	
+ 	background-color: #E2E2DD;
+	height: 95vh;
+	transform: skewY(8deg);
+	position: relative;
+	top: -60vh;
+	z-index: 4;
+}
+.Report-width .Report-box8 .ShopReportItem-car{
+	width: 90%;
+	padding: 2vw;
+	border-radius: 20%;	
+	transform: skewY(-8deg);
+	margin-top: 4vh;
+}
+.Report-width .Report-box8 .ShopReportItem-text{	
+	padding: 10vh 5vh 0px;
+	line-height: 28px;
+	font-size: 16px;
+	text-align: left;
+	transform: skewY(-8deg);
+	margin-top: -3vw;
+}
+.Report-width .Report-box9{	
+ 	background-color: #FAF6EB;
+	height: 65vh;
+	transform: skewY(8deg);
+	position: relative;
+	top: -60vh;
+	z-index: 4;
+}
+.Report-width .Report-box9 h4{
+	font-size: 40px;	
+	color: #602421;
+	transform: skewY(-8deg);
+	position: absolute;
+	top: 2vh;
+	left: 5vw;
+	z-index: 5;
+}
+.Report-width .Report-box9 .ShopReportItem-logoo{
+	width: 90%;
+	padding: 2vw;
+	border-radius: 20%;	
+	transform: skewY(-8deg);
+	margin-top: 20vh;
+}
+.Report-width .Report-box9 .ShopReportItem-text{	
+	padding: 10vh 5vh 0px;
+	line-height: 20px;
+	font-size: 14px;
+	text-align: right;
+	transform: skewY(-8deg);
+	margin-top: -5vh;
+}
+.Report-width .Report-box9 .ShopReportItem-back{
+	font-size: 16px;
+	transform: skewY(-8deg);
+	margin-top: 1vh;
+}
+
+.Report-width .Report-box9 a{
+	text-decoration: none;
+	padding: 10px 20px;
+	border: 1px solid #fff;
+	display:inline-block;
+	background-color:#612421; 
+	color: #fff;
+}
+.Report-width .Report-box10{	
+ 	background-color: #fff;
+	height: 35vh;
+	transform: skewY(-8deg);
+	position: relative;
+	bottom: -3vh;
+	z-index: 5;
+}
+.col-xs-0{
+	display: none;
+}
+
+}
+
+
+/*sm*/
+@media screen and (min-width:768px){
+.Report-width{
+  margin:auto;
+  text-align: center;
+  height: 575vh;
+  overflow:hidden;
+}
+.Report-width .Report-box1{
+  background-image: url('../images/rice/mochi2.jpg');
+  background-size:100%;
+  height: 80vh;
+  background-position: center;
+  position: relative;
+  z-index: 9;
+}
+.Report-width .Report-box1 h2{
+	width: 100%;
+	height: 100%;
+	font-size: 40px;
+	top: 5vh;
+	color:#fff;
+	position: absolute;
+	text-align: center;
+	text-shadow: 1px 1px 20px #595473;
+}
+.Report-width .Report-back{   
+	background-image: url('../images/rice/canal.jpg');
+	background-position: center;
+	background-attachment: fixed;
+	height: 50vh;
+    position: relative;
+    z-index: 9;
+}
+.Report-width .Report-box2{
+	margin-top: -30vh;
+	z-index: 10;
+	position: relative;
+	border: 5px solid #fff;
+    border-radius: 15px;
+    box-shadow: 0px 0px 5px rgba(250,250,250,.9); 
+}
+.Report-width .Report-box2 .ShopReportItem-backimg{
+	background-image: url('../images/rice/back1.jpg');	
+    background-position: center;    
+    border-radius: 15px;
+    height: 60vh;
+}
+.Report-width .Report-box2 .ShopReportItem-backtext{
+	background-color: rgba(255,255,255,.95);
+	height: 60vh;
+	padding: 18vh 5vh 0px;
+	line-height: 30px;
+	font-size: 20px;
+ }
+ .Report-width .Report-box3{
+ 	background-color: #E2E2DD;
+	height: 70vh;
+	transform: skewY(-8deg);
+	position: relative;
+	top: -55vh;
+	z-index: 5;
+ }
+.Report-width .Report-box3 h4{
+	font-size: 35px;	
+	color: #57544B;
+	transform: skewY(8deg);
+	position: absolute;
+	bottom: 2vh;
+	left: 4vw;
+}
+.Report-width .Report-box4{	
+ 	background-color: #25292C;
+	height: 80vh;
+	transform: skewY(-8deg);
+	position: relative;
+	top: -55vh;
+	z-index: 4;
+}
+.Report-width .Report-box4 .ShopReportItem-ric{
+	width: 90%;
+	height: 90%;
+	padding: 2vw;
+	border-radius: 20%;	
+	transform: skewY(8deg);
+	margin-top: 20vh;
+}
+.Report-width .Report-box4 .ShopReportItem-text{	
+	padding: 10vh 5vh 0px;
+	line-height: 28px;
+	font-size: 16px;
+	text-align: left;
+	color: #D1D1AC;
+	transform: skewY(8deg);
+	margin-top: 3vw;
+}
+.Report-width .Report-box5{	
+ 	background-color: #E2E2DD;
+	height: 75vh;
+	transform: skewY(-8deg);
+	position: relative;
+	top: -55vh;
+	z-index: 4;
+}
+.Report-width .Report-box5 .ShopReportItem-manrice{
+	width: 90%;
+	height: 90%;
+	padding: 2vw;
+	border-radius: 20%;	
+	transform: skewY(8deg);
+	margin-top: 5vh;
+}
+.Report-width .Report-box5 .ShopReportItem-text{	
+	padding: 10vh 5vh 0px;
+	line-height: 28px;
+	font-size: 16px;
+	text-align: left;
+	transform: skewY(8deg);
+}
+.Report-width .Report-box6{	
+ 	background-color: #fff;
+	height: 90vh;
+	transform: skewY(-8deg);
+	position: relative;
+	top: -55vh;
+	z-index: 4;
+}
+.Report-width .Report-box6 .ShopReportItem-oilrice{
+	width: 90%;
+	height: 90%;
+	padding: 2vw;
+	border-radius: 20%;	
+	transform: skewY(8deg);
+	margin-top: 20vh;
+}
+.Report-width .Report-box6 .ShopReportItem-text{	
+	padding: 5vw 2vw 0px;
+	line-height: 28px;
+	font-size: 16px;
+	text-align: left;
+	transform: skewY(8deg);
+}
+.Report-width .Report-box7{	
+ 	background-color: #25292C;
+	height: 80vh;
+	transform: skewY(8deg);
+	position: relative;
+	top: -60vh;
+	z-index: 4;
+	color: #CBD1AC;
+}
+.Report-width .Report-box7 .ShopReportItem-gmother{
+	width: 90%;
+	padding: 2vw;
+	border-radius: 20%;	
+	transform: skewY(-8deg);
+	margin-top: 4vh;
+}
+.Report-width .Report-box7 .ShopReportItem-text{	
+	padding: 10vh 5vh 0px;
+	line-height: 28px;
+	font-size: 16px;
+	text-align: left;
+	transform: skewY(-8deg);
+}
+.Report-width .Report-box8{	
+ 	background-color: #E2E2DD;
+	height: 65vh;
+	transform: skewY(8deg);
+	position: relative;
+	top: -60vh;
+	z-index: 4;
+}
+.Report-width .Report-box8 .ShopReportItem-car{
+	width: 90%;
+	padding: 2vw;
+	border-radius: 20%;	
+	transform: skewY(-8deg);
+	margin-top: 4vh;
+}
+.Report-width .Report-box8 .ShopReportItem-text{	
+	padding: 10vh 5vh 0px;
+	line-height: 28px;
+	font-size: 16px;
+	text-align: left;
+	transform: skewY(-8deg);
+	margin-top: 3vw;
+}
+.Report-width .Report-box9{	
+ 	background-color: #FAF6EB;
+	height: 65vh;
+	transform: skewY(8deg);
+	position: relative;
+	top: -60vh;
+	z-index: 4;
+}
+.Report-width .Report-box9 h4{
+	font-size: 40px;	
+	color: #602421;
+	transform: skewY(-8deg);
+	position: absolute;
+	top: 2vh;
+	left: 5vw;
+	z-index: 5;
+}
+.Report-width .Report-box9 .ShopReportItem-logoo{
+	width: 90%;
+	padding: 2vw;
+	border-radius: 20%;	
+	transform: skewY(-8deg);
+	margin-top: 4vh;
+}
+.Report-width .Report-box9 .ShopReportItem-text{	
+	padding: 10vh 5vh 0px;
+	line-height: 28px;
+	font-size: 16px;
+	text-align: left;
+	transform: skewY(-8deg);
+	margin-top: -5vh;
+}
+.Report-width .Report-box9 .ShopReportItem-back{
+	font-size: 16px;
+	transform: skewY(-8deg);
+	margin-top: 1vh;
+}
+
+.Report-width .Report-box9 a{
+	color: #000;
+	text-decoration: none;
+	padding: 10px 20px;
+	border: 1px solid #fff;
+	display:inline-block;
+}
+.Report-width .Report-box9 a:hover{
+	border: 1px solid #fff;
+	background-color:#612421; 
+	color: #fff;
+}
+.Report-width .Report-box10{	
+ 	background-color: #fff;
+	height: 35vh;
+	transform: skewY(-8deg);
+	position: relative;
+	bottom: 5vh;
+	z-index: 5;
+}
+
+}

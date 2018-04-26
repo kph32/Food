@@ -1,6 +1,16 @@
 <?php 
-	// include '../common/common.php';
+ob_start();
+session_start();
+	//載入當前會員資料
 	include '../views/header.php';
+	include '../common/memcollectf.php';
+	include '../common/memMsgf.php';
+	
+  include '../common/Navbar.php';
+  include '../common/Searchbox.php';
+	$mem = $_SESSION['mem'];
+	$_SESSION['memId']=$mem['member_id'];
+	$_SESSION['name']=$mem['name'];
 ?>
 	<div class="memArea">
 		<div class="memArea-container">
@@ -34,27 +44,47 @@
 							<div class="con1 col-sm-1 col-xs-0"></div>
 							<div class="col-sm-10">
 								<div class="memArea-contain-title">會員資料編輯</div>
-								<form>
-								<div class="memArea-info-account"><label for="memaccount">帳號：</label>
-								<input type="text" name="" id="memaccount"></div>
+								<!-- update會員資料開始 -->
+								<form method="post" action="../common/memAreaUpdatef.php">
+								<input type="hidden" name="id" value="<?= $mem['id']?> ">
+								<div class="memArea-info-account">
+									<label>帳號：</label>
+									<span><?= $mem['member_id'] ?></span>
+								</div>
 								
-								<div class="memArea-info-password"><label for="mempsw">密碼：</label>
-								<input type="text" name="" id="mempsw"></div>
+								<div class="memArea-info-password">
+									<label for="mempsw">密碼：</label>
+									<input type="password" name="memPsw" id="mempsw" value="<?= $mem['password'] ?>">
+								</div>
 								
-								<div class="memArea-info-checkpsw"><label for="memckpsw">確認密碼：</label>
-								<input type="text" name="" id="memckpsw"></div>
+								<div class="memArea-info-checkpsw">
+									<label for="memckpsw">確認密碼：</label>
+									<input type="password" name="memckPsw" id="memckpsw" value="<?= $mem['password'] ?>">
+								</div>
 								
-								<div class="memArea-info-nickname"><label for="memnick">暱稱：</label>
-								<input type="text" name="" id="memnick"></div>
+								<div class="memArea-info-name">
+									<label for="memname">姓名：</label>
+									<input type="text" name="name" id="memName" value="<?= $mem['name'] ?>">
+								</div>
 								
-								<div class="memArea-info-email"><label for="mememail">電子信箱：</label>
-								<input type="text" name="" id="mememail"></div>
+								<div class="memArea-info-name">
+									<label for="phone">電話：</label>
+									<input type="text" name="phone" id="memPhone" value="<?= $mem['phone'] ?>">
+								</div>
+
+								<div class="memArea-info-email">
+									<label for="mememail">電子信箱：</label>
+									<input type="text" name="mail" id="mememail" value="<?= $mem['mail'] ?>">
+								</div>
 								
-								<div class="memArea-info-add"><label for="memadd">所在地區：</label>
-								<input type="text" name="" id="memadd"></div>
+								<div class="memArea-info-add">
+									<label for="memadd">所在地區：</label>
+									<input type="text" name="memarea" id="memadd" value="<?= $mem['memarea'] ?>">
+								</div>
 				
-								<input type="submit" name="submit" value="更新" id="memsubmit">
+									<input type="submit" name="submit" value="更新" id="memsubmit">
 								</form>
+								<!-- update會員資料結束 -->
 							</div>
 						</div>
 
@@ -64,13 +94,20 @@
 							<div class="con1 col-sm-1 col-xs-0"></div>
 							<div class="col-sm-10">
 								<div class="memArea-contain-title">會員留言紀錄</div>
-								<div class="memArea-box3 col-sm-12">
-									<div class="col-sm-10">
-										<div class="memArea-msg-title"><span>攤商名稱：<span>好兇蛋餅</span></span></div>
-										<div class="memArea-msg-txt"><span>留言時間：<span>2017/05/10</span></span></div>
-										<div class="memArea-msg-txt"><span>留言內容：<span>好好吃唷!</span></span></div>
+								<div class="memArea-msg-boxAll">
+								<?php 
+								for($i=0 ; $i < count($memMsgAll) ; $i++){
+								echo "<div class='memArea-box3 col-sm-12'>
+									<div class='col-sm-10'>
+										<div class='memArea-msg-title'><span>攤商名稱：<span>". $memMsgAll[$i]['shop_id'] ."</span></span></div>
+										<div class='memArea-msg-txt'><span>留言時間：<span>". $memMsgAll[$i]['message_date'] ."</span></span></div>
+										<div class='memArea-msg-txt'><span>留言內容：<span>". $memMsgAll[$i]['shop_message'] ."</span></span></div>
 									</div>
-									<div class="memArea-msg-delete col-sm-2">刪除</div>
+									<div class='memArea-msg-delete col-sm-2' onclick='deleteMsg(\"".$memMsgAll[$i]['id']."\",$(this));'>刪除</div>
+								</div>";
+								}
+								?>
+
 								</div>
 							</div>
 						</div>
@@ -79,18 +116,29 @@
 							<div class="con1 col-sm-1 col-xs-0"></div>
 							<div class="col-sm-10">
 								<div class="memArea-contain-title">收藏攤商紀錄</div>
-								<div class="memArea-box3 col-sm-12 col-xs-12">
-									<div class="memArea-collect-img col-sm-2 col-xs-3">
-										<img src="../assets/images/MemAreaCollect-shop.jpg" />
-									</div>
-									<div class="memArea-collect-shop col-sm-8 col-xs-9">
-										<span class="col-sm-12 col-xs-12">好兇蛋餅</span>
-										<span class="col-sm-12 col-xs-12">收藏時間：<span>2017/05/10</span></span>
-										<span>營業時間：<span>10:00-18:00</span></span>
-										<span>常駐地址：<span>桃園縣中壢區五興路</span></span>
-									</div>
-									<div class="memArea-collect-delete col-sm-2 col-xs-12">取消收藏</div>
-								</div>
+								
+
+								<?php
+								for($i=0 ; $i < count($collectAll) ;$i++){
+										echo "<div class='memArea-box3 col-sm-12 col-xs-12'>
+												<div class='memArea-collect-img col-sm-2 col-xs-3'>
+													<img src='../assets/images/shopresult/".$collectAll[$i]['shop_image']."' />
+												</div>".
+
+												"<div class='memArea-collect-shop col-sm-8 col-xs-9'>".
+													"<span class='col-sm-12 col-xs-12 memArea-shopId'>".$collectAll[$i]['shop_id']."</span>".
+													"<span class='col-sm-12 col-xs-12'>收藏時間：<span>". $collectAll[$i]['collect_time']."</span></span>".
+													"<span class='col-sm-12 col-xs-12'>營業時間：<span>".$collectAll[$i]['open_time']."</span></span><br>".
+													"<span class='col-sm-12 col-xs-12 memArea-collect-add'>常駐地址：<span>".$collectAll[$i]['announcement']."</span></span>".
+												"</div>
+												<div class='memArea-collect-delete col-sm-2 col-xs-12' onclick='deleteCollect(\"".$collectAll[$i]['shop_id']."\",$(this));'>取消收藏</div>
+											</div>";
+								}?>
+								
+
+
+
+
 							</div>
 						</div>
 						<!-- 會員訂單紀錄 -->

@@ -1,0 +1,266 @@
+.shop-order-show{
+	width: 100%;
+	height: 100vh;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffcc+0,ccffcc+100 */
+background: #ffffcc; /* Old browsers */
+background: -moz-linear-gradient(top, #fbfbad 0%, #ccffcc 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #fbfbad 0%,#ccffcc 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #fbfbad 0%,#ccffcc 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fbfbad', endColorstr='#ccffcc',GradientType=0 ); /* IE6-9 */
+	overflow: hidden;
+	position: relative;
+}
+
+.promo-show-title{
+	max-width: 1200px;	
+	height: 15%;	
+	margin: auto;
+
+}
+
+.shop-order-show-h1{
+	width: 200px;
+	margin-top: 3%;
+	margin-left: 3%;
+	float: left;
+	box-sizing: border-box;			
+}
+.shop-order-show-title{
+	max-width: 1200px;
+    margin: auto;
+	height: 17%;
+	width: 100%;
+	padding-top: 2%;
+	position: relative;
+	box-sizing: border-box;		
+}
+.shop-order-show-txt{
+	float: left;
+	padding: 10px;
+    margin-top: 1%;
+    margin-left: 5%;
+    box-sizing: border-box;		
+}
+
+.shop-order-show-txt p{
+	font-size: 23px;
+	margin: 5px;	
+	
+	color: #ab4a1f;
+	box-sizing: border-box;
+}
+.shop-order-show-title span{
+	font-size: 47px;
+	display: inline-block;
+	color: #ab4a1f;
+	font-weight: bold;
+}
+
+.shop-order-show-p1-g{
+	position: relative;
+	width: 28%;
+	margin: auto;
+	margin-top: 4%;
+	/*float: left;*/
+	/*margin-left: 50vw;*/
+	top: 0;
+	left: 0;
+	cursor: pointer;
+	 display: block;
+}
+.shop-order-show-p2-g{
+	position: relative;
+	width: 21%;
+	margin: auto;
+	margin-top: 4%;
+	/*float: left;*/
+	/*margin-left: 50vw;*/
+	top: 0;
+	left: 25%;
+	cursor: pointer;
+	 display: block;
+}
+.shop-order-show-p3-g{
+	position: relative;
+	width: 21%;
+	margin: auto;
+	margin-top: 4%;
+	/*float: left;*/
+	/*margin-left: 50vw;*/
+	top: 0;
+	left: -25%;
+	cursor: pointer;
+	 display: block;
+}
+.shop-order-show-crown{
+	position: absolute;
+    width: 20%;
+    height: auto;
+    z-index: 25;
+    left: 39%;
+}
+.shop-order-show-p1{
+	position: absolute;
+	width: 100%;
+	z-index: 20;
+	display: block;
+	
+}
+.shop-order-show-sign{	
+    display: block;
+    position: absolute;
+    margin-top: 62%;
+    right: 12%;
+    z-index: 10;
+    /* top: 87px; */
+    width: 74%;
+    /*height: 22vh;*/
+    /*background-size: 10%;*/
+  /*  animation: goAhead 7.5s linear infinite;
+	transition: 3s;*/
+}
+.shop-order-show-shine{
+    display: block;
+    position: absolute;
+    margin-top: -12%;
+    right: -35px;
+    z-index: 1;
+    /* top: 87px; */
+  
+    width: 116%;
+   /* height: 76vh;*/
+   /* animation: rotate 7.5s linear infinite;
+	transition: 3s;*/
+   
+}
+.shop-order-show-p1-g:hover .shop-order-show-shine{
+	animation: rotate 7s linear infinite;
+	transition: 3s;
+
+}
+.shop-order-show-p1-g:hover .shop-order-show-sign{
+-webkit-animation-name: bounce;
+  animation-name: bounce;
+  -webkit-transform-origin: center bottom;
+  -ms-transform-origin: center bottom;
+  transform-origin: center bottom;
+      animation-duration: 1s;
+}
+
+.shop-order-show-p2-g:hover .shop-order-show-shine{
+	animation: rotate 7s linear infinite;
+	transition: 3s;
+
+}
+.shop-order-show-p2-g:hover .shop-order-show-sign{
+-webkit-animation-name: bounce;
+  animation-name: bounce;
+  -webkit-transform-origin: center bottom;
+  -ms-transform-origin: center bottom;
+  transform-origin: center bottom;
+      animation-duration: 1s;
+}
+
+.shop-order-show-p3-g:hover .shop-order-show-shine{
+	animation: rotate 7s linear infinite;
+	transition: 3s;
+
+}
+.shop-order-show-p3-g:hover .shop-order-show-sign{
+-webkit-animation-name: bounce;
+  animation-name: bounce;
+  -webkit-transform-origin: center bottom;
+  -ms-transform-origin: center bottom;
+  transform-origin: center bottom;
+      animation-duration: 1s;
+}
+.shop-order-show-container{
+	width: 100%;
+	height: 83vh;
+
+}
+#map-3d-Cloud10p{
+	width: 23%;
+    opacity: 0.8;
+    position: absolute;
+    left: 4%;
+    /*top: 41%;*/
+    top: 0%;
+    z-index: 30;
+  /*  -webkit-filter: blur(2px);
+    -moz-filter: blur(2px);
+    -ms-filter: blur(2px);
+    filter: blur(2px);*/
+}
+#map-3d-Cloud11p{
+	width: 23%;
+    opacity: 0.6;
+    position: absolute;
+    left: 76%;
+    /*top: 52%;*/
+    top: 0%;
+    z-index: 1;
+    -webkit-filter: blur(2px);
+    -moz-filter: blur(2px);
+    -ms-filter: blur(2px);
+    filter: blur(2px);
+}
+@media screen and (max-width: 414px) {
+	.VideoShow-tv:before {
+		left: 46%;
+		font-size: 15PX;
+	}
+	.shop-order-show-p1 {
+		/*width: 80%;	*/
+	}
+	.shop-order-show-title span {
+    font-size: 38px;
+	}
+	.shop-order-show-p1-g{
+		display: block;
+	    width: 103%;
+	    margin-top: 26%;	
+	}
+	.shop-order-show-p2-g,.shop-order-show-p3-g{
+		display: none;
+	}
+/*	.shop-order-show-p1-g:before {
+    content: '';
+    display: none;
+    position: absolute;
+    bottom: -485px;
+    right: -99px;
+    z-index: 1;
+    background-image: url(/static/media/shop-order-show-shine.be45e205.png);
+    width: 146%;
+    height: 90vh;
+	}
+	.shop-order-show-p1-g:after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: -395px;
+    right: 56px;
+    z-index: 1;
+    background-image: url("../images/shopOrderShow/shop-order-show-sign.png");
+    width: 71%;
+    height: 27vh;
+	}*/
+	.shop-order-show-sign{	
+		bottom: -371px;
+		right: 19%;
+		z-index: 10;
+		top: 6px;
+		width: 68%;
+		height: auto;
+    /*background-size: 10%;*/
+  /*  animation: goAhead 7.5s linear infinite;
+	transition: 3s;*/
+}
+	.shop-order-show-shine{
+	    bottom: -373px;
+	    right: -41px;
+	    width: 120%;
+	    height: auto;
+	}
+}

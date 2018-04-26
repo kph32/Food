@@ -1,0 +1,289 @@
+.VideoShow{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffcc+0,ccffcc+100 */
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ccffcc+0,c5fce8+100 */
+	background: #ccffcc; /* Old browsers */
+	background: -moz-linear-gradient(top,  #ccffcc 0%, #c5fce8 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  #ccffcc 0%,#c5fce8 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  #ccffcc 0%,#c5fce8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ccffcc', endColorstr='#c5fce8',GradientType=0 ); /* IE6-9 */
+
+}
+.VideoShow-container{
+	max-width: 1200px;
+	height: 100vh;
+	margin: auto;
+}
+.VideoShow-videoTitle{
+	width: 200px;
+	padding-top: 30px;
+	padding-bottom: 20px;
+	margin-left: 3%;
+	float: left;
+	box-sizing: border-box;
+}
+.VideoShowTxt-g{
+	margin-top: 3%;
+}
+.VideoShow-txt1{
+	float: left;
+	font-size: 23px;
+    margin-left: 7%;
+    margin-top: 2%;
+    margin-right: .5%;
+    color: #ab4a1f;
+    box-sizing: border-box;
+}
+.VideoShow-txt2{
+	text-align: left;
+	font-size: 47px;
+    display: inline-block;
+    color: #ab4a1f;
+    font-weight: bold;
+}
+.videoShow-outer{
+	padding-top: 125px;
+	padding-left: 40px;
+}
+.VideoShow-video{
+    position: absolute;
+    z-index: 2;
+    left: 30%;
+    margin-top: 7%;
+}
+.VideoShow-iframe{	
+    position: absolute;
+    width: 56%;
+    height: 240px;
+    margin-top: 24.5%;
+    left: 13%;
+    z-index: 10;
+}
+.VideoShow-tv{
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: -1;
+}
+.VideoShow-tv:before{
+    content: "【新竹】陶囍三明治小攤車";
+    display: block;
+    position: absolute;
+    z-index: 1;
+    background-repeat: repeat-x;
+    background-image: url(../images/VideoShow/TVsign.svg);
+    filter: drop-shadow(5px 5px 7px rgba(22,22,22,.1));
+    width: 49%;
+    left: 62%;
+    top: 0%;
+    padding-left: 6%;
+    padding-top: 8%;
+    color: #ff9900;
+    font-size: 22PX;
+    background-size: 100%;
+    /* height: 392%; */
+    height: 200%;
+}
+.VideoShow-tv img{
+	width: 100%;
+}
+.VideoShow-msgAll{
+	margin-top: 80px;
+	margin-left: -10px;
+	height: 400px;
+	width: 100%;
+	background-color: #fff;
+	border-radius: 15px;
+	box-sizing: border-box;
+	font-size: 16px;
+	font-family:'Microsoft JhengHei';
+}
+.VideoShow-msgHeight{
+	height: 280px;
+	padding: 5%;
+	overflow-y: auto;
+}
+.VideoShow-data{
+	height: 30px;
+}
+.VideoShow-input1{
+	height: 35px;
+	padding-left: 10px;
+	margin-left: 4%;
+	width: 75%;
+	font-family:'Microsoft JhengHei';
+	font-size: 14px;
+}
+.VideoShow-input2{
+	height: 35px;
+	padding-left: 10px;
+	margin-left: 4%;
+	width: 10%;
+	border: none;
+	background-color: #e8b439;
+	border-radius: 7px;
+	font-family:'Microsoft JhengHei';
+	color:#333;
+	font-weight: 700;
+	transition: .5s;
+}
+.VideoShow-input2:hover{
+	background-color: #e89959;
+	color: #fff;
+}
+.VideoShow-icon{
+    position: relative;
+    margin-top: 55%;
+    margin-left: 80%;
+    z-index: 10;
+}
+.VideoShow-icon img{
+	width: 100%;
+}
+.VideoShow-icon:hover{
+	animation: pulse 1s linear  infinite;
+}
+
+#map-3d-Cloud8p{
+	width: 48%;
+    opacity: 0.6;
+    position: absolute;
+    left: 13%;
+    /*top: 41%;*/
+    top: 0%;
+    z-index: 1;
+  /*  -webkit-filter: blur(2px);
+    -moz-filter: blur(2px);
+    -ms-filter: blur(2px);
+    filter: blur(2px);*/
+}
+#map-3d-Cloud9p{
+	width: 29%;
+    opacity: 0.8;
+    position: absolute;
+    left: 59%;
+    /*top: 52%;*/
+    top: 0%;
+    z-index: 1;
+    -webkit-filter: blur(2px);
+    -moz-filter: blur(2px);
+    -ms-filter: blur(2px);
+    filter: blur(2px);
+}
+.map-3d-Cloud5mr{
+	width: 150px;
+    opacity: .5;
+    position: absolute;
+    left: 10%;
+    top: 63%;
+    z-index: 20;
+    -webkit-filter: blur(2px);
+    -moz-filter: blur(2px);
+    -ms-filter: blur(2px);
+    filter: blur(2px);
+    -webkit-animation-name: Cloud5;
+    -webkit-animation-duration: 180s;
+    animation-name: Cloud5;
+    animation-duration: 180s;
+    animation-iteration-count: infinite;
+}
+
+@media screen and (max-width: 768px){
+	/*.VideoShow{
+		width: 100%;
+		height: 100%;
+	}*/
+	.videoShow-outer{
+		padding: 0;
+		margin: 0;
+	}
+	.VideoShow-msgAll{
+		margin-top: 2%;
+		margin-left: 2%;
+		width: 96%;
+		padding: 0;
+	}
+	
+}
+
+@media screen and (max-width: 414px){
+	.VideoShow-videoTitle {
+	    display: block;
+	    width: 200px;
+	    padding-left:3%;
+	}
+	.VideoShowTxt-g{
+		margin-top: -3%;
+	}
+	.VideoShow-txt1 {
+		font-size: 27px;
+	   	padding-left: 9px;
+   		margin-top: 8px;
+	}
+	.VideoShow-txt2 {
+	    text-align: left;
+	    font-size: 40px;
+	   /* line-height: 130px;*/
+	    font-weight: bold;
+	    letter-spacing: 4px;
+	    margin-top: -9px;
+   		 margin-bottom: -17%;
+
+	}
+	.VideoShow-video {
+	    position: absolute;
+	    z-index: 2;
+	    left: 29%;
+	    /* padding-left: 0px; */
+	    margin-top: -3%;
+	}
+	.VideoShow-iframe {
+		position: absolute;
+	    width: 122%;
+	    height: 193px;
+	    margin-top: 43.5%;
+	    left: -31%;
+	    z-index: 11;
+	}
+	.VideoShow-tv {
+		position: relative;
+	    margin-top: 0%;
+	    margin-left: -52%;
+	    z-index: 10;
+	    width: 151%;
+	}
+		.VideoShow-tv img {
+	    width: 108%;
+	}
+	.VideoShow-tv:before{
+	    left: 46%;
+	    top: 7%;
+	    font-size: 15PX;
+	}
+	.VideoShow-icon {
+	    position: relative;
+	    margin-top: -10%;
+	    margin-left: 12%;
+	    z-index: 100;
+	    width: 38%;
+	}
+	.map-3d-Cloud5mr {
+    top: 72%;
+	}
+	.map-3d-Cloud2{
+		display: none;
+	}
+	#map-3d-Cloud8 {
+	    width: 155%;
+	    opacity: 0.6;
+	    position: absolute;
+	    left: -52%;
+	    /* top: 41%; */
+	    top: 0%;
+	    z-index: 1;
+	}
+
+}

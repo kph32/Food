@@ -1,0 +1,36 @@
+
+/*pagetop========================*/
+.pagetop {
+  position: fixed;
+  bottom: -200px;
+  right: 55px;
+  z-index: 9999;
+}
+.pagetop a {
+  display: block;
+  width: 160px;
+  height: auto;
+}
+.pagetop a img { width: 100%;}
+
+@media screen and (max-width:768px) {
+	/*.SPhone { display: none!important;}*/
+	.pagetop a {
+	  width: 28%;
+	}
+
+	.pagetop {
+	  right: -47%;
+	  bottom: 2vh;
+	}
+
+}
+
+
+@media screen and (max-width: 414px){
+	.pagetop {
+	    right: -41%;
+	    bottom: 2vh;
+	}
+
+}

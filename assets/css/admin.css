@@ -1,0 +1,53 @@
+body {
+	 background: -moz-linear-gradient(top, #32c5ff 0%, #86f9cf 0%, #86f9cf 0%, #86f9cf 0%, #22b77e 100%, #2989d8 100%, #2989d8 100%, #2989d8 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #32c5ff 0%,#86f9cf 0%,#86f9cf 0%,#86f9cf 0%,#22b77e 100%,#2989d8 100%,#2989d8 100%,#2989d8 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #32c5ff 0%,#86f9cf 0%,#86f9cf 0%,#86f9cf 0%,#22b77e 100%,#2989d8 100%,#2989d8 100%,#2989d8 100%);
+ }
+
+#page-wrapper {
+  background: -moz-linear-gradient(top, #32c5ff 0%, #86f9cf 97%, #86f9cf 100%, #2989d8 100%, #2989d8 100%, #2989d8 100%, #2989d8 100%, #28fcd2 100%, #86f9cf 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #32c5ff 0%,#86f9cf 97%,#86f9cf 100%,#2989d8 100%,#2989d8 100%,#2989d8 100%,#2989d8 100%,#28fcd2 100%,#86f9cf 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #32c5ff 0%,#86f9cf 97%,#86f9cf 100%,#2989d8 100%,#2989d8 100%,#2989d8 100%,#2989d8 100%,#28fcd2 100%,#86f9cf 100%); 
+}
+.navbar-brand img{
+
+vertical-align: top;
+display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 50px;
+    margin: auto 75px
+}
+
+/*@keyframes go{
+			  0%{ left: 100; }
+			  50%{left: 800px;}
+			100%{ right: 500px; }
+		}
+		@keyframes go2{
+			  0%{ right: 800; }
+			  50%{right: 100px;}
+			100%{ left: 900px; }
+		}*/
+.cloud{
+	display: block;
+	position: absolute;
+	top:58px;
+	left: 21%;
+	height: 50px;
+	animation: go 40s 0s infinite alternate;
+}
+.cloud2{
+	display: block;
+	position: absolute;
+    top: 100px;
+    left: 73%;
+	height: 50px;
+	animation: go 40s 0s infinite alternate;
+
+}
+.page-header{
+	    margin: 97px 0 20px;
+}
+/*# sourceMappingURL=main.css.map */

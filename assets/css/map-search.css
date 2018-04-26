@@ -1,0 +1,239 @@
+
+#MapSearch h4{
+ font-size: 18px;
+ color: #EC611D;
+ margin: 0px 0;
+}
+.MapSearch-Container{
+ max-width: 1200px;
+ height: 70vh;
+ margin: 0 auto;
+}
+/*.MapSearch-Map img{
+ width: 100%;
+ height: 80vh;
+}*/
+#map{
+  width: 58%;
+  height: 100%;
+}
+.MapSearch-Info{
+ padding-left: 10px;
+}
+.MapSearch-InfoTitle{
+ margin: 20px 0 0 0;
+ width: 15%;
+ float: left;
+ text-align: right;
+}
+
+.MapSearch-InfoItem{
+ width: calc(85% - 10px);
+ margin:0px 0 0px -10px; 
+ padding: 2px;
+ float: left;
+}
+.MapSearch-InfoItem ul{
+  margin: 0;
+}
+.MapSearch-InfoItem li{
+ margin: 0 0 10px 0;
+ width: 25%;
+ font-size: 14px;
+ line-height: 20px;
+ list-style: none;
+ float: left;
+}
+
+#MapSearch-Checkaa{
+ display: none;
+}
+.MapSearch-Check{
+ position: fixed;
+ top: 31px;
+ right: 30px;
+ z-index: 1000;
+}
+.MapSearch-Check img{
+ width: 38px;
+}
+
+
+.MapSearch-InfoItem .checkno{
+ width: 15%;
+ vertical-align: middle;
+ padding-right: 5px;
+}
+.MapSearch-InfoItem .checkyes{
+ width: 15%;
+ display: none;
+ vertical-align: middle;
+ padding-right: 5px;
+}
+.MapSearch-InfoItem input{
+ display: none;
+}
+.MapSearch-InfoItem input:checked + label .checkno{
+ display: none;
+}
+.MapSearch-InfoItem input:checked + label .checkyes{
+ display: inline;
+}
+
+
+
+.MapSearch-ItemList{
+ /*height: calc(72vh - 80px);*/
+ height: calc(81vh - 80px);
+ overflow-x:hidden; 
+}
+
+.MapSearch-Item{
+ width: 98%;
+ border: 1px solid #E6E6E6;
+ margin-bottom: 10px;
+ box-shadow: 0 0.1rem 0.4rem rgba(0,0,0,.09);
+ /*cursor: pointer;*/
+}
+
+/*.MapSearch-Item a{
+  width: 100%;
+  height: 100%;
+}*/
+.MapSearch-ItemPic{
+ float: left;
+ padding: 20px 0 0 20px;
+ width: 27%;
+}
+.MapSearch-ItemPic img{
+ width: 100%;
+ max-width: 150px;
+}
+.MapSearch-ItemInfo{
+ width: calc(70% - 30px);
+ margin: 0 0 0 10px;
+ padding-top: 20px;
+ padding-bottom: 20px;
+ float: left;
+}
+.MapSearch-FoodWork{
+  color:#4DA743;
+}
+
+
+
+.MapSearch-Score{
+ float: left;
+ color: #fa0;
+ font-size: 20px;
+ letter-spacing: 6px;
+}
+.MapSearch-Score ul{
+ font-size: 0;
+ direction: rtl;
+ text-align: left;
+}
+.MapSearch-Score li{
+ font-size: 24px;
+ display: inline-block;
+ transition: .3S;
+ color: #BDB7B7;
+ width: 20%;
+}
+
+
+
+.MapSearch-ScoreWord{
+  line-height: 26px;
+  font-size: 14px;
+  color: #aaa;
+}
+
+.MapSearch-FoodTag{
+ float: left;
+ font-size: 14px;
+ margin: 7px 0;
+ color: #666;
+}
+.MapSearch-FoodWrok{
+ float: left;
+ font-size: 14px;
+ margin: 7px 0;
+ color:#4DA743; 
+}
+.MapSearch-FoodPlace{
+ float: left;
+ font-size: 14px;
+ margin: 7px 0;
+ color: #666;
+}
+.MapSearch-FoodPlace span{
+ color: #4992EC;
+}
+
+.gm-style-iw strong{
+  color:#EC611D;
+  font-size: 16px;
+  line-height: 1.6;
+}
+.gm-style-iw text{
+  line-height: 1.6;
+}
+.gm-style-iw text:nth-child(3){
+  color: #f1da36;
+}
+.gm-style-iw text:nth-child(4){
+  color: gray;
+}
+.gm-style-iw text:nth-child(8){
+  color: #08b806;
+}
+.gm-style-iw text:nth-child(10){
+  color: #4272db;
+}
+.gm-style-iw img{
+  width: auto;
+  height: 100px;
+}
+
+
+@media screen and (max-width: 768px){
+ .MapSearch-Map{
+  margin-bottom: 20px;
+  padding: 0 10px;
+ }
+ .MapSearch-Search{
+  padding: 0px 0 0 10px;
+  margin: 0 15px;
+  background-color: rgba(250, 250, 250, .8);
+  position: absolute;
+  left: 0;
+  top: 250px;
+  box-shadow: 0 0.2rem 0.4rem rgba(0,0,0,.09);
+ }
+ .MapSearch-InfoTitle span{
+  margin: 0 0 0 0px;
+ }
+ .MapSearch-Info input:checked + .MapSearch-Search{
+  display: none;
+ }
+
+}
+
+.MapSearch-ItemList p{
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: #afafaf;
+}
+
+@media screen and (max-width: 414px){
+  #map {
+      width: 100%;
+      height: 55%;
+  }
+  .MapSearch-ItemList {
+    padding: 0 10px 0;
+    margin-top: -6%;
+  }
+}

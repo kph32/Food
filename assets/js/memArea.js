@@ -18,4 +18,21 @@ function memArea(event, mempage) {
 
 }
 
+//刪除留言 ajax
+
+function deleteMsg(id,item){
+    fetch('../common/memMsgDel.php?id=' + id, {credentials: 'include'} );
+    $(item).closest('.memArea-box3').remove();
+
+}   
+
+
+
+//取消收藏ajax
+
+function deleteCollect(shopId,item){
+    fetch('../common/memcollectDel.php?shopId=' + shopId, {credentials: 'include'} );
+    $(item).closest('.memArea-box3').remove();
+
+}   
 

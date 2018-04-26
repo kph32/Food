@@ -67,7 +67,9 @@
 }
 .memArea-info-account{
 	padding-top: 15px;
+	padding-bottom: 10px;
 }
+
 .memArea-info label{
 	display: inline-block;
 	width: 35%;
@@ -114,7 +116,10 @@
 	font-size: 12px;
 }
 
-
+.memArea-msg-boxAll{
+	height: 430px;
+	overflow-y: auto;
+}
 /*收藏攤商紀錄*/
 .memArea-collectbox{
 	margin-top: 15px;
@@ -124,7 +129,7 @@
 	box-sizing: border-box;
 }
 .memArea-collect-img img{
-	padding: 5px;
+	padding: 40px 5px;
 	width: 100%;
 }
 .memArea-collect-shop{
@@ -143,6 +148,9 @@
 	color: #fff;
 	cursor: pointer;
 	font-size: 12px;
+}
+.memArea-collect-add{
+	margin-bottom: 15px;
 }
 
 /*會員訂單紀錄*/
